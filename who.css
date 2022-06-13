@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* SELECTORES GENERALES */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    max-width: 100vw !important;
+}
+
+/* HEADERS */
+.second-header{
+    z-index: 5;
+    top: 0%;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px; 
+    width: 100vw;
+}
+.donar{
+    background-color: rgb(226, 166, 176);
+}
+.donar:hover{
+    background-color: whitesmoke;
+    color: grey;
+}
+.patrocinar{
+    background-color: rgb(95, 196, 162);
+}
+.patrocinar:hover{
+    background-color: whitesmoke;
+    color: grey;
+}
+.ta{
+    background-color:rgb(230, 177, 113);
+}
+.ta:hover{
+    background-color: whitesmoke;
+    color: grey;
+}
+.second-header{
+    background-color: rgba(51, 62, 71, 0.362);
+    backdrop-filter: blur(20px);
+    height: 65px;
+    justify-content:center;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+header ul a{
+text-decoration: none;
+margin: 5px;
+
+color: rgb(245, 245, 245);
+}
+.donar,.patrocinar,.ta{
+    padding: 15px 30px;
+    transition: all .5s;
+}
+.logo{
+    height:80px;
+}
+.item{
+    margin: 0;
+    padding: 22px 40px;
+    
+    transition: all .5s;
+}
+.item:hover{
+    color: goldenrod;
+    border-bottom: 5px solid goldenrod;
+}
+.redes{
+position: fixed;
+    display: table-row;
+    align-items: center;
+    right: 1%;
+    bottom: 2%;
+    
+}
+#red{
+    list-style: none;
+    margin: 2px;
+    padding: 0;
+}
+.logo-red{
+    margin: 5px;
+    cursor: pointer;
+    width: 35px;
+}
+/* MAIN PAGE */
+.container{
+    padding: 2%;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    width: 90%;
+    margin: auto ;
+    background-color: rgba(115, 151, 197, 0.519);
+    border-radius: 20px;
+}
+h1{
+    display: flex;
+    margin: 5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: rgb(227, 164, 87);
+}
+.quien{
+    margin: 2%;
+}
+.container > img{
+width: 500px;
+height: 500px;
+border-radius: 10px;
+}
+.quien > *{
+    margin: 1.5%;
+}
+.quien > p{
+    font-size: 1.1rem;
+    color: rgb(27, 27, 27);
+}
+.quien > h2{
+    color: whitesmoke;
+}
+
+#pie{
+    display: flex;
+    justify-content: center;
+    color: rgb(245, 245, 245);
+    background-color :rgb(83, 83, 83);
+    padding: 1rem;
+}
+.marcas {
+    margin: 2rem 0;
+}
+
+#logos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#logos img {
+    width: 180px;
+}
+/*PIE DE PÁGINA*/ 
+.pie-pagina{
+    margin-top: 5%;
+    border-top-right-radius: 20px;
+    width: 90%;
+    background-color: #5d6061;
+    }
+.pie-pagina .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+    }
+.pie-pagina .grupo-1 .caja figure{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.pie-pagina .grupo-1 .caja figure img{
+        width: 250px;
+    }
+.pie-pagina .grupo-1 .caja h4{
+        color: #fff;
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+.pie-pagina .grupo-1 .red-social a{
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: rgb(158, 152, 152);
+        margin-right: 10px;
+        background-color: #787a7c;
+        text-align: center;
+        transition: all 300ms ease;
+    }
+.pie-pagina .grupo-1 .red-social a:hover{
+        color: #faac18;
+    }
+.pie-pagina .grupo-1 .caja ul {
+        list-style: none;
+        line-height: 30px;
+    }
+.pie-pagina .grupo-1 .caja a{
+        color: #fff;
+        text-decoration: none;
+    }
+.pie-pagina .grupo-2{
+    width: 100%;
+    text-align: center;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+    
+        
+    }

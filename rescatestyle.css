@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto:wght@300;700&display=swap');
+
+/* HEADERS */
+.second-header{
+    z-index: 5;
+    top: 0%;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px; 
+    width: 100vw;
+}
+.donar{
+    background-color: rgb(226, 166, 176);
+}
+.donar:hover{
+    background-color: whitesmoke;
+    color: grey;
+}
+.patrocinar{
+    background-color: rgb(95, 196, 162);
+}
+.patrocinar:hover{
+    background-color: whitesmoke;
+    color: grey;
+}
+.ta{
+    background-color:rgb(230, 177, 113);
+}
+.ta:hover{
+    background-color: whitesmoke;
+    color: grey;
+}
+.second-header{
+    background-color: rgba(51, 62, 71, 0.362);
+    backdrop-filter: blur(20px);
+    height: 65px;
+    justify-content:center;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+header ul a{
+text-decoration: none;
+margin: 5px;
+
+color: rgb(245, 245, 245);
+}
+.donar,.patrocinar,.ta{
+    padding: 15px 30px;
+    transition: all .5s;
+}
+.logo{
+    height:80px;
+}
+.item{
+    margin: 0;
+    padding: 22px 40px;
+    
+    transition: all .5s;
+}
+.item:hover{
+    color: goldenrod;
+    border-bottom: 5px solid goldenrod;
+}
+.redes{
+position: fixed;
+    display: table-row;
+    align-items: center;
+    right: 1%;
+    bottom: 2%;
+    
+}
+#red{
+    list-style: none;
+    margin: 2px;
+    padding: 0;
+}
+.logo-red{
+    margin: 5px;
+    cursor: pointer;
+    width: 35px;
+}
+/* HISTORIAS DE RESCATE*/
+
+body{
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /*
+    min-height: 100vh;*/
+    background: whitesmoke;
+    font-family: 'DM Sans', sans-serif;
+}
+.cabecera{
+    margin: 7%;
+    font-size: 20px;
+}
+.contenedor{
+    margin-bottom: 50px;
+    /*padding: 10px;
+    width: 1000px;*/
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap: 1.75rem;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.box{
+    position:relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.299);
+    box-shadow: 0 30px 30px rgb(0, 0, 0, .3);
+    border-radius: 10px;
+}
+.box .imgbx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.box .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.box:hover .imgbx img{
+    opacity: 0;
+}
+.box .contenido{
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 80%;
+    height: 60px;
+    background-color:rgba(230, 177, 113, 0.86);
+    backdrop-filter: blur(30px);
+    transition: 0.5s;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 17px;
+}
+.box:hover .contenido{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
+.box .contenido h3{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+.pregunta{
+    margin: 5%;
+    font-size: 20px;
+}
+/*PIE DE PÁGINA*/ 
+.pie-pagina{
+    border-top-right-radius: 20px;
+    width: 90%;
+    background-color: #5d6061;
+    }
+.pie-pagina .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+    }
+.pie-pagina .grupo-1 .caja figure{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.pie-pagina .grupo-1 .caja figure img{
+        width: 250px;
+    }
+.pie-pagina .grupo-1 .caja h4{
+        color: #fff;
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+.pie-pagina .grupo-1 .red-social a{
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: rgb(158, 152, 152);
+        margin-right: 10px;
+        background-color: #787a7c;
+        text-align: center;
+        transition: all 300ms ease;
+    }
+.pie-pagina .grupo-1 .red-social a:hover{
+        color: #faac18;
+    }
+.pie-pagina .grupo-1 .caja ul {
+        list-style: none;
+        line-height: 30px;
+    }
+.pie-pagina .grupo-1 .caja a{
+        color: #fff;
+        text-decoration: none;
+    }
+.pie-pagina .grupo-2{
+    width: 100%;
+    text-align: center;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+    margin-bottom: 1%;
+    }

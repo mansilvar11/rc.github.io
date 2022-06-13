@@ -1,0 +1,489 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Roboto+Mono:wght@200;300;400&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+/* SELECTORES GENERALES */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    max-width: 100vw !important;
+}
+
+/* HEADERS */
+.second-header{
+  z-index: 5;
+  top: 0%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px; 
+  width: 100vw;
+}
+.donar{
+  background-color: rgb(226, 166, 176);
+}
+.donar:hover{
+  background-color: whitesmoke;
+  color: grey;
+}
+.patrocinar{
+  background-color: rgb(95, 196, 162);
+}
+.patrocinar:hover{
+  background-color: whitesmoke;
+  color: grey;
+}
+.ta{
+  background-color:rgb(230, 177, 113);
+}
+.ta:hover{
+  background-color: whitesmoke;
+  color: grey;
+}
+.second-header{
+  background-color: rgba(51, 62, 71, 0.362);
+  backdrop-filter: blur(20px);
+  height: 65px;
+  justify-content:center;
+}
+.nav-list{
+  display: flex;
+  list-style: none;
+}
+header ul a{
+text-decoration: none;
+margin: 5px;
+
+color: rgb(245, 245, 245);
+}
+.donar,.patrocinar,.ta{
+  padding: 15px 30px;
+  transition: all .5s;
+}
+.logo{
+  height:80px;
+}
+.item{
+  margin: 0;
+  padding: 22px 40px;
+  
+  transition: all .5s;
+}
+.item:hover{
+  color: goldenrod;
+  border-bottom: 5px solid goldenrod;
+}
+.redes{
+position: fixed;
+  display: table-row;
+  align-items: center;
+  right: 1%;
+  bottom: 2%;
+  
+}
+#red{
+  list-style: none;
+  margin: 2px;
+  padding: 0;
+}
+.logo-red{
+  margin: 5px;
+  cursor: pointer;
+  width: 35px;
+}
+
+/*Banner tomar accion*/
+.img-container{
+    background-size: cover;
+    background-position-y:center ;
+    height: 300px;
+    margin-bottom: 10px;
+}
+#banner-accion img{
+    display: block;
+    margin: auto;
+    background-size: cover;
+}
+#banner-accion{
+  margin-top: 5%;
+    text-align: center;
+}
+#banner-accion h1{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #e67e22;
+}
+#banner-accion p{
+    margin-top: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+#banner-accion button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px, 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #000000 ;
+    margin: 3px; 
+    margin-top: 3px;
+    margin-bottom: 4px;
+    transition: .2s ease;
+}
+#banner-accion button:hover{
+    background-color:  #EE9B00;
+}
+
+/*sección para colaborar*/
+
+.container
+{
+	position: relative;
+	width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+  margin: auto;
+}
+.container .box
+{
+	position: relative;
+	width: 280px;
+	height: 400px;
+	margin: 20px 0;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.container .box .imgBx
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	clip-path: circle(400px at center 100px);
+	transition: 0.5s;
+	transition-delay: 0.5s;
+}
+.container .box:hover .imgBx
+{
+	clip-path: circle(80px at center 100px);
+	transition-delay: 0s;
+}
+.container .box .imgBx img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.container .box .content
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 55%;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+.container .box .content h2
+{
+	margin: 0;
+	padding: 0;
+  color: #e67e22;
+  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Poppins', sans-serif;
+}
+.container .box .content a
+{
+	text-decoration: none;
+	background-color:  #EE9B00;
+	color: #fff;
+	padding: 5px;
+	display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  
+}
+.container .box .content h2,
+.container .box .content p,
+.container .box .content a
+{
+	opacity: 0;
+	transition: 0.5s;
+	transform: translateY(20px);
+  
+}
+.container .box:hover .content h2
+{
+	opacity: 1;
+	transform: translateY(0);
+	transition-delay: 0.5s
+}
+.container .box:hover .content p
+{
+	opacity: 1;
+	transform: translateY(0);
+	transition-delay: 0.7s
+}
+.container .box:hover .content a
+{
+	opacity: 1;
+	transform: translateY(0);
+	transition-delay: 0.9s
+}
+
+/*Clubes*/
+.voluntarios{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .voluntarios .image{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 10rem;
+    flex: 1 1 10rem;
+  }
+  
+  .voluntarios .image img{
+    width: 100%;
+  }
+  
+  .voluntarios .content{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
+    flex: 1 1 40rem;
+  }
+  
+  .voluntarios .content h3{
+    color: #130f40;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .voluntarios .content h3 span{
+    color: #e67e22;
+  }
+  
+  .voluntarios .content p{
+    font-size: 1.1rem;
+    color: #666;
+    padding: 1rem 0;
+    line-height: 2;
+    font-family: 'Poppins', sans-serif;
+  }
+  .voluntarios .content .btn{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 2px, 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #000000 ;
+    transition: .2s ease;
+    text-decoration: none;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  .voluntarios .content .btn:hover
+  {
+    background-color:  #EE9B00;
+  }
+
+  /*cuidado aca*/
+.club-disca,
+.veteranos 
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.club-disca .image,
+.veteranos .image
+ {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 10rem;
+  flex: 1 1 10rem;
+}
+
+.club-disca .image img,
+.veteranos .image img,
+.voluntarios .image img {
+  width: 70%;
+}
+
+.club-disca .content,
+.veteranos .content{
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 40rem;
+  flex: 1 1 40rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.club-disca .content h3,
+.veteranos .content h3 
+{
+  font-size: 2rem;
+  color: #130f40;
+  font-family: 'Poppins', sans-serif;
+}
+
+.club-disca .content h3 span,
+.veteranos .content h3 span {
+  color: #e67e22;
+}
+
+.club-disca .content p,
+.veteranos .content p {
+  padding: 1rem 0;
+  line-height: 2;
+  color: #666;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.club-disca .content .amount,
+.veteranos .content .amount {
+  font-size: 1.5rem;
+  color: #130f40;
+  padding: .5rem 0;
+}
+
+.club-disca .content a img,
+.veteranos .content a img {
+  height: 10rem;
+  margin-top: 1rem;
+}
+/*Banner intermedio*/
+.banner-intermedio{
+  background-size: contain;
+  background-position-y:center;
+}
+
+.med-box p, h2{
+  justify-content: center;
+  text-align: center;
+}
+.med-box h2{
+  color: #e67e22;
+}
+.med-box p{
+  font-size: 1.1rem;
+  color: #666;
+  padding: 1rem 0;
+}
+.caja ul{
+  column-count: 2;
+  list-style: none;
+  margin: 10px;
+  left: 0;
+  position: relative;
+}
+.caja li
+{
+  margin: 12px;
+  cursor: pointer;
+  transition: all .4s;
+}
+.caja li:hover{
+  transform: translate(20px);
+  /*aca va el color*/
+   box-shadow: 0 0 5px #e67e22
+}
+
+
+
+/*PIE DE PÁGINA*/ 
+.pie-pagina{
+  margin-top: 5%;
+  border-top-right-radius: 20px;
+  width: 90%;
+  background-color: #5d6061;
+  }
+.pie-pagina .grupo-1{
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 50px;
+      padding: 45px 0px;
+  }
+.pie-pagina .grupo-1 .caja figure{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+.pie-pagina .grupo-1 .caja figure img{
+      width: 250px;
+  }
+.pie-pagina .grupo-1 .caja h4{
+      color: #fff;
+      margin-bottom: 25px;
+      font-size: 20px;
+  }
+.pie-pagina .grupo-1 .red-social a{
+      display: inline-block;
+      text-decoration: none;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      color: rgb(158, 152, 152);
+      margin-right: 10px;
+      background-color: #787a7c;
+      text-align: center;
+      transition: all 300ms ease;
+  }
+.pie-pagina .grupo-1 .red-social a:hover{
+      color: #faac18;
+  }
+.pie-pagina .grupo-1 .caja ul {
+      list-style: none;
+      line-height: 30px;
+  }
+.pie-pagina .grupo-1 .caja a{
+      color: #fff;
+      text-decoration: none;
+  }
+.pie-pagina .grupo-2{
+  width: 100%;
+  text-align: center;
+      color: #fff;
+      align-items: center;
+      justify-content: center;
+  
+      
+  }
+
