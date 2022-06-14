@@ -13,10 +13,8 @@
 <body>
     <!-- HEADER -->
     <header>
-        
-           
         <div class="second-header">
-            <a href="./index.html"><img src="assets/meta-logo-removebg-preview.png" alt="" class="logo"></a>
+            <a href="./index-en.html"><img src="assets/meta-logo-removebg-preview.png" alt="" class="logo"></a>
             <ul class="nav-list">
                 <li><a href="./donate.html"class="item">Ayúdanos</a></li>
                 <li><a href="./who.html"class="item">¿Quiénes Somos?</a></li>
@@ -30,6 +28,24 @@
                 <li class="list-link"><a href="sponsor.html" class="patrocinar">PATROCINAR</a></li>
                 <li class="list-link"><a href="action.html" class="ta">TOMAR ACCION</a></li>
             </ul>
+            <div class="bars-menu" id="bars-menu">
+                <input type="checkbox" class="check">
+                <i class="fas fa-bars bars" id="bars"></i>
+                <i class="fas fa-times equis" id="equis"></i>
+                <nav id="bars-nav">
+                  <ul>
+                <li><a href="donate.html" class="donar">DONAR</a></li>
+                <li><a href="sponsor.html" class="patrocinar">PATROCINAR</a></li>
+                <li><a href="action.html" class="ta">TOMAR ACCION</a></li>
+                <li><a href="./donate.html"class="item">Ayúdanos</a></li>
+                <li><a href="./who.html"class="item">¿Quiénes Somos?</a></li>
+                <li><a href="./Adopcion.html"class="item">Adopciones</a></li>
+                <li><a href="./Rescate.html"class="item">Rescate Animal</a></li>
+                <li><a href="./shop.html"class="item">Tiendita </a></li>
+                <li><a href="./index.html#pie"class="item">Contacto</a></li>
+            </ul>
+                </nav>
+              </div>
     
     </div>
         <div>
@@ -47,11 +63,14 @@
             <div class="img-container">
                 <img src="./assets/tomar-accion.png" alt="">
             </div>
-            <h1>Colabora con nosotros</h1>
-                 <p>El Campito Refugio es la ONG más grande de Argentina y único en el mundo </p>
-                 <p>Ayudanos a cambiar la vida de un perro y una familia</p>
-                 <button type="buttom">Quiero ayudar</button>
-        </section>
+            <div class="col">
+                <h1>Colabora con nosotros</h1>
+                <p>El Campito Refugio es la ONG más grande de Argentina y único en el mundo </p>
+                <p>Ayudanos a cambiar la vida de un perro y una familia</p>
+                <button type="buttom"><a href="./donate.html" class="butt">Quiero Ayudar</a></button>
+
+            </div>
+            </section>
 
     <!--Fin del banner-->
 <!-- Inicio sección para colaborar-->
@@ -65,7 +84,7 @@
             <div class="content">
                 <h2>Medicación</h2>
                 <p>Podes donarnos medicamentos necesarios para nuestros camperitos</p>
-                <a href="#">Lista de Medicamentos</a>
+                <a href="#medicinas">Lista de Medicamentos</a>
             </div>
         </div>
         <div class="box">
@@ -76,7 +95,7 @@
                 <h2>Campito Solidario</h2>
                 <p>También creamos alianzas con otros refugios del país, donamos parte de lo recibido
                     o traemos animales para ayudarlos en el Campito</p>
-                <a href="#">Ayudanos a ayudar</a>
+                <a href="#refugios">Ayudanos a ayudar</a>
             </div>
         </div>
         <div class="box">
@@ -86,7 +105,7 @@
             <div class="content">
                 <h2>Vení a pasear</h2>
                 <p>Otra forma de colaborar es visitarnos para pasear y mimar a los camperitos.</p>
-                <a href="#">Cómo llegar</a>
+                <a href="#pie">Cómo llegar</a>
             </div>
         </div>
         <div class="box">
@@ -96,7 +115,7 @@
             <div class="content">
                 <h2>Escuelas</h2>
                 <p>Queremos educar y concientizar a los niños sobre las responsabilidades de tener una mascota</p>
-                <a href="#">Visitanos con tu escuela</a>
+                <a href="./index.html#pie">Visitanos con tu escuela</a>
             </div>
         </div>
     </div>
@@ -170,7 +189,7 @@
 <!--Fin efecto wave-->
 
 <!--Inicio Sección Listas-->
-<div class="med-box">
+<div class="med-box" id="medicinas">
 <h2>Doná medicamentos e insumos</h2>
 <p>Consultas por insumos a <a href="mailto:donacionesalcampito@gmail.com">donacionesalcampito@gmail.com</a>
     </p>
@@ -207,7 +226,7 @@
 </div> 
 </div>
 <!--Listas de Refugios-->
-<div class="med-box">
+<div class="med-box" id="refugios">
 <h2>El Campito Solidario</h2>
 <p>Creemos que la mejor forma que existe de cambiar la realidad de nuestros callejeros
     es trabajando en conjunto con todos los amantes de los animales. </p>
@@ -258,7 +277,7 @@
 
 <!--Fin sección Listas -->
     <!--Sección Maps-->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.608950603419!2d-58.434967885271966!3d-34.891164780269875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd524123fd69d%3A0xc8636b72951eb39b!2sEl%20campito%20Refugio!5e0!3m2!1ses-419!2sar!4v1654287919085!5m2!1ses-419!2sar" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.608950603419!2d-58.434967885271966!3d-34.891164780269875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd524123fd69d%3A0xc8636b72951eb39b!2sEl%20campito%20Refugio!5e0!3m2!1ses-419!2sar!4v1654287919085!5m2!1ses-419!2sar" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </main>
    <!-- Footer -->
    <footer class="pie-pagina" id="pie">

@@ -11,16 +11,86 @@
     font-family: 'Caveat', cursive;
 }
 /* HEADERS */
-
-
+.bars-menu input[type="checkbox"], .bars-menu .fa-bars, .bars-menu .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .bars-menu .fa-bars, .bars-menu .fa-times {
+    font-size: 48px;
+    margin: auto;
+    pointer-events: none;
+    color: rgba(229, 229, 229, 0.885);
+  }
+  
+  .bars-menu input[type="checkbox"] {
+    opacity: 0;
+  }
+.bars-menu nav {
+border-radius: 10px;
+width: 200px;
+position: absolute;
+top:60px;
+width: 50vw;
+height: max-content;
+background-color: rgba(27, 27, 27, 0.761);
+backdrop-filter: blur(20px);
+margin: 0;
+  }
+  
+  .bars-menu input:not(:checked) ~ nav {
+    display: none;
+  }
+  
+  .bars-menu input:checked ~ .fa-bars {
+    display: none;
+  }
+  
+  .bars-menu input:not(:checked) ~ .fa-times {
+    display: none;
+  }
+.bars-menu{
+transition: all .5s;
+justify-content: space-around;
+align-items: center;
+position: relative;
+top: 8%;
+color: white;
+position: relative;
+min-height: 48px;
+    color: inherit;
+    text-decoration: none;
+    display: none;
+    max-width: 200px;
+    min-width: 20%;
+    font-variant: small-caps;
+    text-shadow: 1px 1px black;
+  }
+.bars-menu ul{
+    text-decoration: none;
+    list-style: none;
+}
+.bars-menu li {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 2%
+}
 .second-header{
+    z-index: 5;
     top: 0%;
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 100px; 
-    width: 100vw;
+    width: 100%;
 }
 .donar{
     background-color: rgb(226, 166, 176);
@@ -44,23 +114,29 @@
     color: grey;
 }
 .second-header{
-    background-color: rgba(51, 62, 71, 0.108);
-    backdrop-filter: blur(30px);
+    background-color: rgba(51, 62, 71, 0.362);
+    backdrop-filter: blur(20px);
     height: 65px;
     justify-content:center;
 }
 .nav-list{
     display: flex;
     list-style: none;
+    font-size: calc(.8vw + .2rem);
 }
 header ul a{
 text-decoration: none;
-margin: 5px;
+margin: auto;
+display: flex;
+max-height: 15px;
 
 color: rgb(245, 245, 245);
 }
 .donar,.patrocinar,.ta{
-    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px calc(1vw + .2rem);
+    margin: 1px;
     transition: all .5s;
 }
 .logo{
@@ -80,19 +156,25 @@ color: rgb(245, 245, 245);
 position: fixed;
     display: table-row;
     align-items: center;
-    right: 1%;
-    bottom: 2%;
+    right: 2%;
+    bottom: 1%;
+    height: 200px;
+    width: 40px;
     
 }
 #red{
     list-style: none;
-    margin: 2px;
-    padding: 0;
-}
-.logo-red{
     margin: 5px;
     cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.logo-red{
+    margin: 2px;
+    cursor: pointer;
     width: 35px;
+    height: 35px;
 }
 .shop-nav{
     list-style: none;
@@ -264,7 +346,7 @@ background-color: whitesmoke;
 /* tags */
 .iconos-tags{
 margin: auto;
-margin-top: -100px;
+margin-top: 50px;
 margin-bottom: 5%;
 width: 80%;
 display: flex;
@@ -357,6 +439,7 @@ font-size: .9rem;
 }
 /*PIE DE PÁGINA*/ 
 .pie-pagina{
+    margin-top: 2%;
     border-top-right-radius: 20px;
     width: 90%;
     background-color: #5d6061;
@@ -415,4 +498,198 @@ font-size: .9rem;
         align-items: center;
         justify-content: center;
     
+        
     }
+    /* MEDIA QWERTYS */
+/* HEADERS */
+@media only screen and (max-width: 500px)
+{
+.second-header{
+    justify-content: space-around;
+    align-items: center;
+}
+    .nav-list{
+        display: none;
+    }
+    #bars-menu{
+        display:flex;
+        position: relative;
+    }
+
+/* PAGINA PRINCIPAL */
+ .carrousel{
+    width: 100vw;
+    height: 40vh;
+    margin-left: 0%;
+    margin-bottom: 100px;
+}
+.carrousel .grande{
+    margin-left: -100%;
+    width: 300%;
+    height: 40vh;
+}
+.carrousel .imgs{
+    width: 100%;
+    height: 40vh;
+} 
+
+
+.sliders{
+display: none;
+}
+.main-1{
+    line-height: 2.5rem;
+    color: whitesmoke;
+    width: 50%;
+    margin: 4%;
+  
+}
+.segunda{
+  
+    flex-wrap: nowrap;
+}
+.main-2{
+    line-height: 2.5rem;
+    width: 50%;
+}
+.abby{
+    border-radius: 50%;
+    height: 40%;
+}
+.tit{
+margin-top: 70px;
+font-size: 2rem;
+}
+.tit-2{
+font-size: 1rem;
+}
+.tercera{
+    background-position-x:100%;
+    background-position-y: 40%;
+    background-image: url(./assets/fondo-3.webp);
+    background-size: cover;
+}
+
+.shop-nav li{
+margin: 2%;
+backdrop-filter: blur(20px);
+background-color: rgba(210, 210, 210, 0.375);
+border-radius: 20px;
+padding: 20%;
+}
+.shop-nav{
+left: 2%;
+top: 40%;
+}
+/*PIE DE PÁGINA*/ 
+.pie-pagina{
+    margin-top: 5%;
+    width: 100%;
+    }
+.pie-pagina .grupo-1{
+        width: 100vw;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        padding: 45px 0px;
+    }
+.pie-pagina .grupo-1 .caja figure{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.pie-pagina .grupo-1 .caja figure img{
+        width: 150px;
+    }
+.pie-pagina .grupo-1 .caja h4{
+        color: #fff;
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+    #montos button {
+    
+        width: 40%;
+
+    }
+}
+/* Tablets */
+@media only screen and (min-width:501px) and (max-width:1200px)
+{
+.second-header{
+    justify-content: space-around;
+    align-items: center;
+}
+    .nav-list{
+        display: none;
+    }
+    #bars-menu{
+        display:flex;
+        position: relative;
+    }
+    .carrousel{
+        width: 100vw;
+        height: 60vh;
+        margin-left: 0%;
+        margin-bottom: 100px;
+    }
+    .carrousel .grande{
+        margin-left: -100%;
+        width: 300%;
+        height: 60vh;
+    }
+    .carrousel .imgs{
+        width: 100%;
+        height: 60vh;
+    }
+    
+    
+    .sliders{
+    display: none;
+    }
+    .main-1{
+        line-height: 2.5rem;
+        color: whitesmoke;
+        width: 50%;
+        margin: 4%;
+      
+    }
+    .segunda{
+      
+        flex-wrap: nowrap;
+    }
+    .main-2{
+        line-height: 2.5rem;
+        width: 50%;
+    }
+    .abby{
+        border-radius: 50%;
+        height: 60%;
+    }
+    .tit{
+        margin-top: 70px;
+    font-size: 2.5rem;
+    }
+    .tit-2{
+    font-size: 1.5rem;
+    }
+    .tercera{
+        background-position-x:100%;
+        background-position-y: 40%;
+        background-image: url(./assets/fondo-3.webp);
+        background-size: cover;
+    }
+    .shop-nav li{
+        margin: 2%;
+        backdrop-filter: blur(20px);
+        background-color: rgba(210, 210, 210, 0.375);
+        border-radius: 20px;
+        padding: 20%;
+        }
+        .shop-nav{
+        left: 1%;
+        top: 60%;
+        }
+}
