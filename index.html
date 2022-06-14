@@ -28,17 +28,21 @@
                     <li class="list-link"><a href="action.html" class="ta">TOMAR ACCION</a></li>
                 </ul>
                 <div class="bars-menu" id="bars-menu">
-                    <input type="checkbox">
-                    <i class="fas fa-bars bars"></i>
-                    <i class="fas fa-times equis"></i>
-                    <nav>
+                    <input type="checkbox" class="check">
+                    <i class="fas fa-bars bars" id="bars"></i>
+                    <i class="fas fa-times equis" id="equis"></i>
+                    <nav id="bars-nav">
                       <ul>
-                        <li><a href="#">Item 1</a></li>
-                        <li><a href="#">Item 2</a></li>
-                        <li><a href="#">Item 3</a></li>
-                        <li><a href="#">Item 4</a></li>
-                        <li><a href="#">Item 5</a></li>
-                      </ul>
+                    <li><a href="donate.html" class="donar">DONAR</a></li>
+                    <li><a href="sponsor.html" class="patrocinar">PATROCINAR</a></li>
+                    <li><a href="action.html" class="ta">TOMAR ACCION</a></li>
+                    <li><a href="./donate.html"class="item">Ayúdanos</a></li>
+                    <li><a href="./who.html"class="item">¿Quiénes Somos?</a></li>
+                    <li><a href="./Adopcion.html"class="item">Adopciones</a></li>
+                    <li><a href="./Rescate.html"class="item">Rescate Animal</a></li>
+                    <li><a href="./shop.html"class="item">Tiendita </a></li>
+                    <li><a href="./index.html#pie"class="item">Contacto</a></li>
+                </ul>
                     </nav>
                   </div>
         
@@ -60,14 +64,14 @@
         <div class="grande" id="grande">
             <div class="imgs primera">
                 <div class="main-1">
-                <h1>Somos Refugio <span class="color">El Campito</span></h1>
-                <h2>Trabajamos todos los días para rescatar a tu mejor amigo</h2>
+                <h1 class="tit">Somos Refugio <span class="color">El Campito</span></h1>
+                <h2 class="tit-2">Trabajamos todos los días para rescatar a tu mejor amigo</h2>
                 </div>
                 </div>
             <div class="imgs segunda">
                     <div class="main-2">
-                    <h1>¡Hola! Mi nombre es <span class="color">Abby</span></h1>
-                    <h2>Estoy buscando un nuevo hogar</h2>
+                    <h1 class="tit">¡Hola! Mi nombre es <span class="color">Abby</span></h1>
+                    <h2 class="tit-2">Estoy buscando un nuevo hogar</h2>
                     <a href=""><button class="main-button">ver mi historia</button></a>
                     </div>
                     <img src="./assets/abby.png" alt="" class="abby">
@@ -75,12 +79,6 @@
             <div class="imgs tercera">
             </div>
         </div>
-       
-        <ul class="puntos">
-            <li class="punto izq activo"></li>
-            <li class="punto mid"></li>
-            <li class="punto der"></li>
-        </ul>
         <div class="sliders">
             <div class="slider-btn left">&#60;</div>
             <div class="slider-btn right">&#62;</div>
@@ -89,7 +87,7 @@
 
 </main>
 
-    <!--Tarjetas de Donacion al campito-->
+<!--Tarjetas de Donacion al campito-->
 <section id="donaciones">
     <div class="donacion-section">
         <div class="en-memoria">
@@ -100,7 +98,7 @@
             <h3 class="titulo"> Doná para alguien especial</h3>
             <a href="./donate.html" class="button">Doná ahora</a>
         </div>
-        
+
     </div>
     <div class="donacion-section">
         <div class="en-memoria">
@@ -109,7 +107,7 @@
             </div>
             <h3 class="titulo">Vení a conocer a los camperitos</h3>
             <a href="" class="button">Visitar</a>
-            
+
         </div>
     </div>
     <div class="donacion-section">
@@ -121,10 +119,13 @@
             </div>
             <h3 class="titulo">Quiero adoptar a un camperito</h3>
             <a href="" class="button">Click acá</a>
-            
+
         </div>
     </div>
 </section>
+
+
+
 <div data-mc-src="0ac1c74a-0681-4513-b282-fe6f0a748402#instagram" class="feed"></div>
         
 <script 
@@ -133,9 +134,7 @@
 </script>
     <!--Tarjetas razones para colaborar con los clubes y voluntarios  -->
  <section  id="razones">
-
-    <h2>Razones para colaborar con nosotros</h2>
-    <div class="camperitos"> 
+    <!-- <div class="camperitos"> 
         <h3>¿Qué Significan nuestros camperitos para las personas?</h3>
         <h4>Amor incondicional, la historia de Blacky</h4>
         <div class="incondicional">
@@ -156,7 +155,7 @@
             
             </div>
            </div>
-    </div>
+    </div> -->
 <div class="container-colecta">
     <div class="colecta">
         <img src="./assets/necesitamos-1.jpeg" alt="" class="colecta-img">
@@ -165,6 +164,7 @@
     </div>
 </div>
     <!--Razoner tarjetas -->
+    <h2>Razones para colaborar con nosotros</h2>
 <div class="reasons-container">
     <div class="tarjetas">
         <div class="reasons-img">
@@ -265,7 +265,7 @@
     <div class="grupo-1">
         <div class="caja">
             <figure>
-                <a href="#">
+                <a href="index.html">
                     <img src="./assets/logo-sin-fondo.png" alt="Logo Refugio">
                 </a>
             </figure>

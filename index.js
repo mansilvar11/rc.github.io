@@ -7,6 +7,11 @@ let right = document.querySelector(".right");
 const punto = document.querySelectorAll(".punto")
 grande.insertAdjacentElement('afterbegin', imgsLast)
 
+let check = document.querySelector(".check");
+let bars = document.querySelector("#bars");
+let equis = document.querySelector("#equis");
+let barsNav = document.querySelector("#bars-nav");
+
 function Next() {
 let imgsFisrt = document.querySelectorAll(".imgs")[0];
 grande.style.marginLeft = "-200%";
@@ -37,3 +42,6 @@ right.addEventListener('click', function(){
 setInterval(function(){
     Next()
 }, 5000);
+
+// Menu hamburguesa;
+
